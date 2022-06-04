@@ -1,0 +1,32 @@
+{
+  "name": "cache-storm",
+  "version": "1.0.0",
+  "description": "TypeScript caching abstraction layer with TTL, LRU eviction, and namespaces",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "example": "ts-node examples/basic.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cache",
+    "lru",
+    "fifo",
+    "lfu",
+    "ttl",
+    "typescript",
+    "in-memory",
+    "namespace"
+  ],
+  "author": "idirdev",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.0"
+  }
+}

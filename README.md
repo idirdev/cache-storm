@@ -1,5 +1,7 @@
 # ⚡ Cache Storm
 
+> Experimental project — exploring caching strategies, thundering herd protection, and invalidation patterns.
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green.svg)](https://nodejs.org/)

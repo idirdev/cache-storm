@@ -126,3 +126,33 @@ npx ts-node examples/basic.ts
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+Cache Storm est une couche d'abstraction de cache TypeScript avec support du TTL, plusieurs stratégies d'éviction (LRU, FIFO, LFU), isolation par espaces de noms et typage complet. Ce projet expérimental explore la protection contre les "thundering herd" et les patterns d'invalidation de cache.
+
+### Installation
+```bash
+npm install cache-storm
+```
+
+### Utilisation
+```typescript
+import { CacheStorm } from 'cache-storm';
+
+// Créer un cache LRU avec 100 entrées max et TTL de 60s
+const cache = CacheStorm.create<string>({
+  maxSize: 100,
+  defaultTTL: 60_000,
+  strategy: 'lru',
+});
+
+cache.set('utilisateur:1', 'Alice');
+console.log(cache.get('utilisateur:1')); // 'Alice'
+console.log(cache.getStats()); // Statistiques hits/misses
+```
+
+Consultez la section **API Reference** ci-dessus pour les méthodes disponibles, les stratégies d'éviction et les exemples d'utilisation des espaces de noms.

@@ -156,3 +156,4 @@ console.log(cache.getStats()); // Statistiques hits/misses
 ```
 
 Consultez la section **API Reference** ci-dessus pour les méthodes disponibles, les stratégies d'éviction et les exemples d'utilisation des espaces de noms.
+
